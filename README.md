@@ -1,6 +1,6 @@
 # Knowledgeable Preference Alignment for LLMs in Domain-specific Question Answering
 ![](https://img.shields.io/badge/version-1.0.1-blue)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/zjukg/KoPA/main/LICENSE)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/zjukg/KnowPAT/main/LICENSE)
 [![Preprint](https://img.shields.io/badge/Preprint'23-brightgreen)](https://arxiv.org)
 [![Pytorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?e&logo=PyTorch&logoColor=white)](https://pytorch.org/)
  - [Knowledgeable Preference Alignment for LLMs in Domain-specific Question Answering](https://arxiv.org)
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## 📕 Training & Test
 
-- run KoPA tuning
+- run KnowPAT tuning
 ```shell
 export MODEL_PATH="YOUR LLM PATH"
 export SAVE_PATH="YOUR SAVE PATH"
