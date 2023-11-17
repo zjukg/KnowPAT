@@ -72,7 +72,7 @@ CUDA_VISIBLE_DEVICES=0 python inference.py
 
 
 ## 🤝 Cite:
-Please condiser citing this paper if you use the code from our work.
+Please consider citing this paper if you use the code from our work.
 Thanks a lot :)
 
 ```bigquery
