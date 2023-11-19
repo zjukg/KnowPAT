@@ -76,12 +76,21 @@ Please consider citing this paper if you use the code from our work.
 Thanks a lot :)
 
 ```bigquery
-@misc{zhang2023knowledgeable,
-      title={Knowledgeable Preference Alignment for LLMs in Domain-specific Question Answering}, 
-      author={Yichi Zhang and Zhuo Chen and Yin Fang and Lei Cheng and Yanxi Lu and Fangming Li and Wen Zhang and Huajun Chen},
-      year={2023},
-      eprint={2311.06503},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+
+@article{DBLP:journals/corr/abs-2311-06503,
+  author       = {Yichi Zhang and
+                  Zhuo Chen and
+                  Yin Fang and
+                  Lei Cheng and
+                  Yanxi Lu and
+                  Fangming Li and
+                  Wen Zhang and
+                  Huajun Chen},
+  title        = {Knowledgeable Preference Alignment for LLMs in Domain-specific Question
+                  Answering},
+  journal      = {CoRR},
+  volume       = {abs/2311.06503},
+  year         = {2023}
 }
+
 ```
