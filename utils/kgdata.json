@@ -1,0 +1,17 @@
+{
+    "entity": [
+        "entity1",
+        "entity2",
+        "entity3"
+    ],
+    "relation": [
+        "relation1",
+        "relation2",
+        "relation3"
+    ],
+    "triple": [
+        ["head1", "relation1", "tail1"],
+        ["head2", "relation2", "tail3"],
+        ["head3", "relation1", "tail3"]
+    ]
+}
