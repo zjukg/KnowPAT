@@ -15,6 +15,8 @@ For reasons of **commercial confidentiality**, the dataset in our paper will **n
 
 For each data instance, you should prepare a question and several answers, and the human preference score of each answer. A higher score means a better and preferred answer. Note that the answers should be sorted in the **score descending** order, which means the better answer and its score should be in the front.
 
+- **News**: We now add a new Chinese QA datasets [RJUA](https://github.com/alipay/RJU_Ant_QA) and it is open-sourced. You can try to conduct experiments on this dataset.
+
 
 ## 🔬 Dependencies
 Our code is developed based on [RRHF](https://github.com/GanjinZero/RRHF). Please build the Python environment following the instruction like RRHF.
@@ -34,15 +36,17 @@ pip install -r requirements.txt
 
 ## 📕 Training & Test
 
-- run KnowPAT tuning
+- run KnowPAT training on RJUA datasets
+
 ```shell
+
 export MODEL_PATH="YOUR LLM PATH"
 export SAVE_PATH="YOUR SAVE PATH"
-export DATA_PATH="YOUR DATA PATH"
+export DATA_PATH="data/RJUA_train.json"
 export WANDB_DISABLED=true
 wandb offline
 
-CUDA_VISIBLE_DEVICES=0 nohup python train.py \
+CUDA_VISIBLE_DEVICES=1 nohup python train.py \
     --model_name_or_path $MODEL_PATH \
     --data_path $DATA_PATH \
     --bf16 True \
@@ -53,14 +57,14 @@ CUDA_VISIBLE_DEVICES=0 nohup python train.py \
     --gradient_accumulation_steps 8 \
     --evaluation_strategy "no" \
     --save_strategy "steps" \
-    --save_steps 3000 \
+    --save_steps 300 \
     --save_total_limit 40 \
-    --learning_rate 3e-4 \
+    --learning_rate 1e-4 \
     --weight_decay 0. \
     --warmup_ratio 0.03 \
     --lr_scheduler_type "cosine" \
     --logging_steps 1 \
-    --model_max_length 512 --rrhf_weight 0.1 > log.txt &
+    --model_max_length 512 --rrhf_weight 0.01 > log_rjua.txt &
 
 ```
 You may need to fill your model/save/data path before running. The model path should be a llama-architecture LLM.
