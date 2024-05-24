@@ -15,6 +15,7 @@ For reasons of **commercial confidentiality**, the dataset in our paper will **n
 
 For each data instance, you should prepare a question and several answers, and the human preference score of each answer. A higher score means a better and preferred answer. Note that the answers should be sorted in the **score descending** order, which means the better answer and its score should be in the front.
 
+- **News**: 🎉🎉🥰🎉🎉 Our paper has been accepted by Findings of ACL 2024.
 - **News**: We now add a new Chinese QA datasets [RJUA](https://github.com/alipay/RJU_Ant_QA) and it is open-sourced. You can try to conduct experiments on this dataset.
 
 
